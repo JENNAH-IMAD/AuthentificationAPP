@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "T4A96/bEdNXntMKLt4kSfHE6YIwkTBF4t6xvBl02d24=",
+  "Source": "BackendAuth",
+  "BasePath": "_content/BackendAuth",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

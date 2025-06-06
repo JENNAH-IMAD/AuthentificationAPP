@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\postman_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\postman_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\test_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\test_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\test_all_functions.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\test_all_functions.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\run_tests.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\run_tests.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\backendauth.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\backendauth.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\security\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\security\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\security\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\security\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|c:\\users\\pc780\\onedrive\\desktop\\v1\\backendauth\\backendauth\\security\\configurejwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D176217-D40E-402C-BC6B-9FD61A973EE3}|BackendAuth\\BackendAuth.csproj|solutionrelative:backendauth\\security\\configurejwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "POSTMAN_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\POSTMAN_GUIDE.md",
+              "RelativeDocumentMoniker": "BackendAuth\\POSTMAN_GUIDE.md",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\POSTMAN_GUIDE.md",
+              "RelativeToolTip": "BackendAuth\\POSTMAN_GUIDE.md",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-06-06T16:50:31.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test_api.http",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\test_api.http",
+              "RelativeDocumentMoniker": "BackendAuth\\test_api.http",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\test_api.http",
+              "RelativeToolTip": "BackendAuth\\test_api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-06T16:50:23.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test_all_functions.ps1",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\test_all_functions.ps1",
+              "RelativeDocumentMoniker": "BackendAuth\\test_all_functions.ps1",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\test_all_functions.ps1",
+              "RelativeToolTip": "BackendAuth\\test_all_functions.ps1",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-06T16:50:13.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "run_tests.bat",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\run_tests.bat",
+              "RelativeDocumentMoniker": "BackendAuth\\run_tests.bat",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\run_tests.bat",
+              "RelativeToolTip": "BackendAuth\\run_tests.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-06-06T16:50:07.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Security\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "BackendAuth\\Security\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Security\\JwtSettings.cs",
+              "RelativeToolTip": "BackendAuth\\Security\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:59:55.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Security\\JwtService.cs",
+              "RelativeDocumentMoniker": "BackendAuth\\Security\\JwtService.cs",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Security\\JwtService.cs",
+              "RelativeToolTip": "BackendAuth\\Security\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:59:55.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConfigureJwt.cs",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Security\\ConfigureJwt.cs",
+              "RelativeDocumentMoniker": "BackendAuth\\Security\\ConfigureJwt.cs",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Security\\ConfigureJwt.cs",
+              "RelativeToolTip": "BackendAuth\\Security\\ConfigureJwt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:59:54.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\appsettings.json",
+              "RelativeDocumentMoniker": "BackendAuth\\appsettings.json",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\appsettings.json",
+              "RelativeToolTip": "BackendAuth\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-06T14:59:48.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Program.cs",
+              "RelativeDocumentMoniker": "BackendAuth\\Program.cs",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\Program.cs",
+              "RelativeToolTip": "BackendAuth\\Program.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:59:45.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BackendAuth.http",
+              "DocumentMoniker": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\BackendAuth.http",
+              "RelativeDocumentMoniker": "BackendAuth\\BackendAuth.http",
+              "ToolTip": "C:\\Users\\pc780\\OneDrive\\Desktop\\V1\\BackendAuth\\BackendAuth\\BackendAuth.http",
+              "RelativeToolTip": "BackendAuth\\BackendAuth.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-06T14:59:38.071Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

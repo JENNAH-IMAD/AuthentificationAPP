@@ -1,0 +1,35 @@
+### Test de l'API BackendAuth
+
+### 1. Test de base de l'API
+GET https://localhost:7232/api/auth/test
+
+### 2. Login avec l'utilisateur admin
+POST https://localhost:7232/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123*"
+}
+
+### 3. Récupérer tous les utilisateurs (nécessite token JWT)
+GET https://localhost:7232/api/users
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### 4. Créer un nouvel utilisateur (nécessite token JWT Admin)
+POST https://localhost:7232/api/users
+Content-Type: application/json
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "Test123*",
+  "firstName": "Test",
+  "lastName": "User",
+  "roles": ["Employé"]
+}
+
+### 5. Récupérer les rôles disponibles
+GET https://localhost:7232/api/users/roles
+Authorization: Bearer YOUR_JWT_TOKEN_HERE 

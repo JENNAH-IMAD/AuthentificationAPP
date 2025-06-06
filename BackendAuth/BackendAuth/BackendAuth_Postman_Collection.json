@@ -1,0 +1,387 @@
+{
+  "info": {
+    "name": "BackendAuth API - Collection Complète",
+    "description": "Collection Postman pour tester toutes les fonctionnalités de l'API BackendAuth avec JWT",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "backendauth-api-collection"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5232",
+      "type": "string"
+    },
+    {
+      "key": "jwt_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "admin_username",
+      "value": "admin",
+      "type": "string"
+    },
+    {
+      "key": "admin_password",
+      "value": "Admin123*",
+      "type": "string"
+    },
+    {
+      "key": "created_user_id",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{jwt_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Auto-set Authorization header",
+          "if (pm.collectionVariables.get('jwt_token')) {",
+          "    pm.request.headers.add({",
+          "        key: 'Authorization',",
+          "        value: 'Bearer ' + pm.collectionVariables.get('jwt_token')",
+          "    });",
+          "}"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "name": "🔧 1. Test API de Base",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/test",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "auth", "test"]
+        },
+        "description": "Test pour vérifier que l'API fonctionne correctement"
+      },
+      "response": []
+    },
+    {
+      "name": "🔐 2. Login Admin (Obtenir Token)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Sauvegarder automatiquement le token JWT",
+              "if (pm.response.code === 200) {",
+              "    const response = pm.response.json();",
+              "    pm.collectionVariables.set('jwt_token', response.token);",
+              "    pm.test('Token JWT sauvegardé', function () {",
+              "        pm.expect(response.token).to.exist;",
+              "    });",
+              "    console.log('🔑 Token JWT sauvegardé automatiquement');",
+              "} else {",
+              "    pm.test('Erreur de connexion', function () {",
+              "        pm.response.to.have.status(200);",
+              "    });",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"{{admin_username}}\",\n  \"password\": \"{{admin_password}}\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/login",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "auth", "login"]
+        },
+        "description": "Connexion avec l'utilisateur admin. Le token JWT sera automatiquement sauvegardé."
+      },
+      "response": []
+    },
+    {
+      "name": "✅ 3. Valider Token JWT",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\"{{jwt_token}}\""
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/validate",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "auth", "validate"]
+        },
+        "description": "Valider le token JWT actuel"
+      },
+      "response": []
+    },
+    {
+      "name": "👥 4. Récupérer Tous les Utilisateurs",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/users",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users"]
+        },
+        "description": "Récupère la liste de tous les utilisateurs (requiert rôle Admin)"
+      },
+      "response": []
+    },
+    {
+      "name": "🎭 5. Récupérer les Rôles Disponibles",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/users/roles",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users", "roles"]
+        },
+        "description": "Récupère la liste des rôles disponibles (Admin, Manager, Employé)"
+      },
+      "response": []
+    },
+    {
+      "name": "🆕 6. Créer Nouvel Utilisateur",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Sauvegarder l'ID du nouvel utilisateur",
+              "if (pm.response.code === 201) {",
+              "    const response = pm.response.json();",
+              "    pm.collectionVariables.set('created_user_id', response.id);",
+              "    pm.test('Utilisateur créé avec succès', function () {",
+              "        pm.expect(response.id).to.exist;",
+              "    });",
+              "    console.log('👤 ID utilisateur sauvegardé: ' + response.id);",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"testuser_postman\",\n  \"email\": \"testuser@postman.com\",\n  \"password\": \"TestUser123*\",\n  \"firstName\": \"Test\",\n  \"lastName\": \"Postman\",\n  \"roles\": [\"Employé\"]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/users",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users"]
+        },
+        "description": "Crée un nouvel utilisateur avec le rôle Employé. L'ID sera automatiquement sauvegardé."
+      },
+      "response": []
+    },
+    {
+      "name": "🔍 7. Récupérer Utilisateur par ID",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/users/{{created_user_id}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users", "{{created_user_id}}"]
+        },
+        "description": "Récupère les détails de l'utilisateur créé précédemment"
+      },
+      "response": []
+    },
+    {
+      "name": "✏️ 8. Modifier Utilisateur",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Test Modifié\",\n  \"lastName\": \"Postman Updated\",\n  \"isActive\": true,\n  \"roles\": [\"Manager\"]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/users/{{created_user_id}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users", "{{created_user_id}}"]
+        },
+        "description": "Modifie l'utilisateur créé (changement de nom et promotion au rôle Manager)"
+      },
+      "response": []
+    },
+    {
+      "name": "🔐 9. Test Login Nouvel Utilisateur",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"testuser_postman\",\n  \"password\": \"TestUser123*\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/login",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "auth", "login"]
+        },
+        "description": "Test de connexion avec le nouvel utilisateur créé"
+      },
+      "response": []
+    },
+    {
+      "name": "🚫 10. Test Accès Sans Token (Doit Échouer)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/users",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users"]
+        },
+        "description": "Test de sécurité : tentative d'accès sans token JWT (doit retourner 401)"
+      },
+      "response": []
+    },
+    {
+      "name": "🗑️ 11. Supprimer Utilisateur de Test",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/users/{{created_user_id}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users", "{{created_user_id}}"]
+        },
+        "description": "Supprime l'utilisateur de test créé précédemment"
+      },
+      "response": []
+    },
+    {
+      "name": "✅ 12. Vérifier Suppression (Doit Échouer)",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{jwt_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/users/{{created_user_id}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "users", "{{created_user_id}}"]
+        },
+        "description": "Vérification que l'utilisateur a bien été supprimé (doit retourner 404)"
+      },
+      "response": []
+    }
+  ]
+} 
