@@ -39,7 +39,7 @@ Créez un fichier `.env.local` à la racine du projet :
 
 ```env
 # URL de l'API Backend
-NEXT_PUBLIC_API_URL=https://localhost:5001/api
+NEXT_PUBLIC_API_URL=https://localhost:5232/api
 
 # Environnement
 NODE_ENV=development
@@ -55,7 +55,7 @@ L'application sera disponible sur : `http://localhost:3000`
 ## 🔗 Connexion avec le Backend
 
 Assurez-vous que :
-1. **BackendAuth API** est démarrée sur `https://localhost:5001`
+1. **BackendAuth API** est démarrée sur `https://localhost:5232`
 2. **PostgreSQL** est en cours d'exécution
 3. **CORS** est configuré pour autoriser `http://localhost:3000`
 
