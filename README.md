@@ -54,7 +54,7 @@ git push -u origin main
 - Chaque dossier (`FrontendAuth`, `BackendAuth`) contient son propre README pour plus de détails techniques.
 
 ## 5. Auteurs
-- Projet réalisé par [Votre Nom] (remplacez ici)
+- Projet réalisé par [JENNAH IMAD]
 
 ---
 Pour toute question, ouvrez une issue sur GitHub ! 
