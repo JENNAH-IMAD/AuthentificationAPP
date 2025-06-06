@@ -1,6 +1,7 @@
 # 🔐 AuthFullStackApp – Système Complet d’Authentification et de Gestion des Utilisateurs
 
 Application complète d’authentification full-stack incluant une **API sécurisée ASP.NET Core 9** et une **interface web moderne en Next.js 13**, avec **gestion des rôles**, **JWT**, **dashboard interactif**, et **CRUD utilisateurs**.
+![App Screenshot](https://github.com/JENNAH-IMAD/AuthentificationAPP/raw/main/app%20screen.png)
 
 ---
 
